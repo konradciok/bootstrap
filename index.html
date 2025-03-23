@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watercolor Workshops - Anna Ciok</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --color-button: 151,103,68;
+      --color-button-text: 241,225,215;
+      --font-body-family: Inter, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body-family);
+      background-color: #f4e9e2;
+      color: #6b4930;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(244, 233, 226, 0.9), rgba(244, 233, 226, 0.9)),
+                  url('https://anna-ciok.com/cdn/shop/files/proces-43.jpg') center/cover;
+    }
+
+    .booking-card {
+      border: 2px solid rgba(var(--color-button), 0.1);
+      border-radius: 12px;
+    }
+
+    .btn-primary {
+      background-color: rgb(var(--color-button)) !important;
+      border-color: rgb(var(--color-button)) !important;
+      color: rgb(var(--color-button-text)) !important;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .btn-outline-secondary {
+      border-color: rgba(var(--color-button), 0.5);
+      color: rgb(var(--color-button));
+    }
+
+    .btn-outline-secondary:hover {
+      background-color: rgba(var(--color-button), 0.1);
+    }
+
+    #shopify-subscription-policy-button {
+      color: rgb(var(--color-button)) !important;
+      text-decoration: none;
+      position: relative;
+    }
+
+    #shopify-subscription-policy-button:hover {
+      text-decoration: underline;
+      text-decoration-color: rgba(var(--color-button), 0.7);
+    }
+
+    .selectable-date:hover {
+      background-color: rgba(var(--color-button), 0.1);
+      transition: background-color 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Alert for users with JavaScript disabled -->
+<noscript>
+  <div class="alert alert-warning text-center" role="alert">
+    JavaScript is disabled in your browser. Some functionalities of this page may not work as intended.
+  </div>
+</noscript>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(var(--color-button))">
+  <div class="container">
+    <a class="navbar-brand" href="#">Anna Ciok Art</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#workshop">Workshop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section py-5" role="banner">
+  <div class="container text-center">
+    <h1 class="display-4 mb-4">Abstract Watercolor Workshop</h1>
+    <p class="lead fs-5">Inspired by Tenerife’s Beauty</p>
+    <p class="w-lg-75 mx-auto">
+      Discover the art of watercolor painting in the heart of Güímar, a charming Canarian town full of history and local charm.
+      Held in a beautiful 100-year-old Canarian home, this workshop invites you to immerse yourself in creativity while connecting
+      with Tenerife’s stunning landscapes and culture.
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6 col-lg-5">
+        <img loading="lazy" src="https://anna-ciok.com/cdn/shop/files/ania-4570.jpg" 
+             alt="Anna Ciok painting in studio"
+             class="img-fluid rounded-3 shadow-lg" />
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <h2 class="mb-4">Who am I?</h2>
+        <p class="lead fs-5 mb-4">Local artist &amp; instructor</p>
+        <p>I am a painter living on Tenerife, where I dedicate my time to creating and selling artworks to clients 
+          who wish to have beautiful, custom-made pieces of art in their new apartments, crafted by a local artist.</p>
+        <p>In the past, I have conducted workshops at a friendly studio, gaining valuable experience in teaching both 
+          children and adults. Recently, I opened my own gallery, where I aim to continue inspiring others to explore 
+          and deepen their passion for art in a welcoming and creative environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workshop Details -->
+<section id="workshop" class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body text-center">
+            <h3 class="h5">📅 When</h3>
+            <p class="mb-0">Every Friday<br>11:00 AM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body text-center">
+            <h3 class="h5">📍 Where</h3>
+            <p class="mb-0">Güímar, Tenerife<br><small>Historic Canarian home</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <div class="card-body text-center">
+            <h3 class="h5">🎨 Includes</h3>
+            <p class="mb-0">All materials<br><small>&amp; personal guidance</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="booking-card p-4 shadow">
+          <h2 class="mb-4">Book Your Masterclass</h2>
+          <p class="lead">€40.00 EUR</p>
+          <p class="fw-bold">How to book:</p>
+          <ol>
+            <li>Choose your date</li>
+            <li>Select number of seats</li>
+            <li>Complete checkout</li>
+          </ol>
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <div class="input-group quantity-input" style="max-width: 150px">
+              <button class="btn btn-outline-secondary" id="decrement">-</button>
+              <input type="number" class="form-control text-center" id="quantity" value="1" min="1" aria-label="Number of seats">
+              <button class="btn btn-outline-secondary" id="increment">+</button>
+            </div>
+            <button class="btn btn-primary btn-lg flex-grow-1" id="bookButton">Book Now</button>
+          </div>
+          <div id="shopify-buyer-consent" class="mt-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="consentCheck">
+              <label class="form-check-label" for="consentCheck">
+                I agree to the <a href="#" id="shopify-subscription-policy-button" class="btn btn-link p-0" role="button" aria-haspopup="dialog" aria-expanded="false">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card border-0 h-100">
+          <img loading="lazy" src="https://anna-ciok.com/cdn/shop/files/google-6.jpg" alt="Workshop participants" class="img-fluid rounded-3">
+          <div class="card-body text-center">
+            <p class="text-muted mt-3">Join our creative community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2023 Anna Ciok Art. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Modal: Date Picker -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Select a Date</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Available Fridays in the next 3 months:</p>
+        <div class="table-responsive">
+          <table class="table table-hover table-bordered text-center align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Day</th>
+              </tr>
+            </thead>
+            <tbody id="dateTableBody">
+              <!-- Filled by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Checkout -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="dialog">
+    <div class="modal-content">
+      <form id="bookingForm" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLabel">Confirm Your Booking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Selected Date:</strong> <span id="selectedDateDisplay"></span></p>
+
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Name and Surname</label>
+            <input type="text" class="form-control" id="fullName" required aria-required="true">
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required aria-required="true">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required aria-required="true">
+          </div>
+
+          <div class="mb-3">
+            <label for="ticketQuantity" class="form-label">How many tickets?</label>
+            <input type="number" id="ticketQuantity" class="form-control" min="1" max="10" value="1" required aria-required="true" />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Proceed to Checkout</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Terms and Conditions -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+        <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const quantityInput = document.getElementById('quantity');
+  document.getElementById('increment').addEventListener('click', () => quantityInput.value++);
+  document.getElementById('decrement').addEventListener('click', () => {
+    if (quantityInput.value > 1) quantityInput.value--;
+  });
+
+  document.getElementById('bookButton').addEventListener('click', function (e) {
+    if (!document.getElementById('consentCheck').checked) {
+      e.preventDefault();
+      alert("Please agree to the terms and conditions before booking.");
+      return;
+    }
+    new bootstrap.Modal(document.getElementById('bookingModal')).show();
+  });
+
+  const dateTableBody = document.getElementById('dateTableBody');
+  const today = new Date();
+  let count = 1;
+  for (let d = new Date(today); d < new Date(today.getFullYear(), today.getMonth() + 3, today.getDate()); d.setDate(d.getDate() + 1)) {
+    if (d.getDay() === 5) {
+      const dateStr = d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+      const row = document.createElement('tr');
+      row.classList.add('selectable-date');
+      row.style.cursor = 'pointer';
+      row.setAttribute('data-date', dateStr);
+      row.innerHTML = `<td>${count++}</td><td>${dateStr}</td><td>Friday</td>`;
+      dateTableBody.appendChild(row);
+    }
+  }
+
+  dateTableBody.addEventListener('click', function (e) {
+    const row = e.target.closest('tr');
+    if (row && row.dataset.date) {
+      document.getElementById('selectedDateDisplay').textContent = row.dataset.date;
+      bootstrap.Modal.getInstance(document.getElementById('bookingModal')).hide();
+      new bootstrap.Modal(document.getElementById('checkoutModal')).show();
+    }
+  });
+
+  document.getElementById('bookingForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const qty = document.getElementById('ticketQuantity').value;
+    const date = document.getElementById('selectedDateDisplay').textContent;
+
+    if (!name || !phone || !email) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    alert(`✅ Booking confirmed!\n\nDate: ${date}\nTickets: ${qty}\nName: ${name}\nPhone: ${phone}\nEmail: ${email}`);
+    bootstrap.Modal.getInstance(document.getElementById('checkoutModal')).hide();
+  });
+
+  document.getElementById('shopify-subscription-policy-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    new bootstrap.Modal(document.getElementById('termsModal')).show();
+  });
+</script>
+</body>
+</html>
